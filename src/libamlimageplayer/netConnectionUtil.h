@@ -15,7 +15,6 @@ Description:Provide basic functions  to connect westeros
 #include <stddef.h>
 #include <stdint.h>
 #include <meson_drm.h>
-#include <drm_fourcc.h>
 #include <errno.h>
 #include <sys/mman.h>
 #include <sys/time.h>

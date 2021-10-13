@@ -16,7 +16,7 @@
 
 #include "imageplayer.h"
 #include "meson_drm.h"
-#include "drm_fourcc.h"
+#include "drm/drm_fourcc.h"
 
 extern int drmPrimeHandleToFD(int fd, uint32_t handle, uint32_t flags, int *prime_fd);
 
@@ -31,7 +31,7 @@ void *uv = NULL;
 //void destroyVideoClientConnection( VideoClientConnection *conn );
 int createGemBuffer(GemBuffer *gemBuf,ScreenSize* screensize );
 void Log(const char* name) {
-  fprintf(stderr,name);
+  fprintf(stderr,"%s", name);
 }
 typedef struct funparameter
 {
